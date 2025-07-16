@@ -1312,7 +1312,7 @@ MANTENIMIENTO:
 - Documentar cambios y versiones
 
 =============================================================================
-"""Tipo:** {results['exam_type'].title()}")
+st.write(f"**Tipo:** {results.get('exam_type', '').title()}")
             st.write(f"**Total de preguntas:** {results['total_questions']}")
             st.write(f"**Fecha:** {results['date']}")
             st.write(f"**Módulos evaluados:** {', '.join(results['modules'])}")
